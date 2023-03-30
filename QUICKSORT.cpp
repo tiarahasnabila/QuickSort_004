@@ -72,7 +72,7 @@ void q_short(int low, int high)
 		}
 		cmp_count++;
 
-													// Langkah 9
+		// Langkah 9
 		if (i < j) // if the greater element is on the left of the element
 		{
 			//swap the element at index i whit the element at index j
@@ -96,30 +96,3 @@ void q_short(int low, int high)
 
 }
 
-
-void display() {
-	cout << "\n-----------------" << endl;
-	cout << "Sorted Array" << endl;
-	cout << "\n-----------------" << endl;
-
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << "";
-	}
-
-	cout << "\n\nNumber of comparasions : " << cmp_count << endl;
-	cout << "Number of data movements: " << mov_count << endl;
-}
-
-
-int main()
-{
-
-	input();
-	//sort the array using quick sort
-	q_short(0, n - 1);
-	display();
-	system("pause");
-
-	return 0;
-}
